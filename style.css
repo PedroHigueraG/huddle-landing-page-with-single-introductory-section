@@ -1,0 +1,98 @@
+/* variables */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-Magenta: hsl(300, 69%, 71%);
+}
+/* style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    line-height: 2.5rem;
+    padding: 0 2.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+a{
+    color: var(--soft-Magenta);
+}
+main{
+    min-height: 100vh;
+    background-color: var(--violet);
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3rem 4.5rem;
+}
+picture img{
+    width: 100%;
+    margin: 8rem 0;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 1.5rem 8rem;
+    border-radius: 5rem;
+    color: var(--violet);
+    font-size: 1.6rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem rgba(0, 0, 0, 0.4);
+    margin: 1rem 0;
+    transition: .3s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--soft-Magenta);
+    color: rgb(255, 255, 255);
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    font-size: 1.6rem;
+    border: 0.1rem solid white;
+    width: 3.5rem;
+    height: 3.5rem;
+    text-align: center;
+    border-radius: 100%;
+    margin: 7rem 0.7rem;
+    transition: .3s;
+}
+li i{
+    margin-top: 0.8rem;
+}
+li:hover{
+    color: var(--soft-Magenta);
+    border: 0.1rem solid var(--soft-Magenta);
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.icon{
+    height: 4rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
