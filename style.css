@@ -96,3 +96,45 @@ li:hover{
     flex-direction: column;
     align-items: center;
 }
+/* responsive */
+@media screen and (min-width:1080px) {
+    .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    picture {
+        width: 60%;
+    }
+    .info{
+        align-items: flex-start;
+        width: 40%;
+    }
+    main{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+    }
+    ul{
+        justify-content: flex-end;
+    }
+    li{
+        margin: 0 1rem;
+    }
+    p{
+        padding: 0;
+    }
+    h1, button, p{
+        margin-left: 2rem;
+        text-align: left;
+    }
+    .atributtion{
+        text-align: center;
+    }
+}
+@media screen and (min-width:1720px) {
+    picture{
+        width: 40%;
+    }
+    .info{
+        width: 60%;
+    }
+}
